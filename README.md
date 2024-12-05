@@ -1,12 +1,17 @@
 # WebCameraでリアルタイム物体検出AI（YOLO）を動かしてみよう
 
 ## 学習済み汎用モデル
+[ここから](https://huggingface.co/Ultralytics/YOLOv8/tree/main)ダウンロードしましょう。
+※下に行くほど精度が高いがデータサイズが大きい
 - yolov8n.pt
 - yolov8s.pt
+- yolov8m.pt
+- yolov8l.pt
 - yolov8x.pt
 
 ## コード
-
+ダウンロードしたモデルファイルに合わせて、load modelの文字列を変更しましょう。
+標準では、yolov8n.ptを読み込む設定にしています。
 ```
 from ultralytics import YOLO
 import cv2
