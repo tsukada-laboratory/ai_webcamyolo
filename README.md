@@ -80,7 +80,7 @@ cv2.destroyAllWindows()
 
 ## 判定枠を人物のみに限定し、検出数を画面左上に表示
 
----
+```
 from ultralytics import YOLO
 import cv2
 import math 
@@ -158,4 +158,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
----
+```
